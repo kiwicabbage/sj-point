@@ -15,7 +15,7 @@ def findContracts(snapshot, target = 20):
         key=lambda x: x[1],
         default=(None, None)
     )
-
+    print(snapshot[closest_index])
     # return the shioaji contract type
     return snapshot[closest_index]
     

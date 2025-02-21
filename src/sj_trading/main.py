@@ -3,7 +3,7 @@ from PyQt6.QtWidgets import QApplication
 from PyQt6.QtCore import QThread
 from .ui import TradingMonitor
 import sys
-from .Backend import BackendWorker
+from .logic.Backend import BackendWorker
 
 
 

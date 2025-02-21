@@ -21,3 +21,4 @@ src/sj_trading/teleNotify.py
 src/sj_trading/test.py
 src/sj_trading/uibackup.py
 .env
+src/sj_trading/logic/
