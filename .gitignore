@@ -1,0 +1,20 @@
+# Python-generated files
+src/sj_trading/__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+ipynb_checkpoints/
+
+# Virtual environments
+.venv/
+
+shioaji.log
+src/sj_trading/Backend.py
+src/sj_trading/mainbackup.py
+src/sj_trading/shoaji.log
+src/sj_trading/teleNotify.py
+src/sj_trading/test.py
+src/sj_trading/uibackup.py
+.env

@@ -1,0 +1,31 @@
+[project]
+name = "sj-trading"
+version = "0.1.0"
+description = "Shioaji Trading"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "pyqt6>=6.8.1",
+    "python-dotenv>=1.0.1",
+    "python-telegram-bot>=21.10",
+    "shioaji>=1.2.5",
+]
+
+[project.scripts]
+sj-trading = "sj_trading:main"
+hello = "sj_trading:hello"
+main = "sj_trading:main"
+version = "sj_trading:show_version"
+futrues_testing = "sj_trading.testing_flow:testing_futures_ordering"
+# testing_flow = "sj_trading.testing_flow:"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[dependency-groups]
+dev = [
+    "ipykernel>=6.29.5",
+]
+
+
