@@ -6,10 +6,13 @@ dist/
 wheels/
 *.egg-info
 ipynb_checkpoints/
-
+.DS_Store
 # Virtual environments
 .venv/
-
+*.log
+*.key
+*.pem
+*.crt
 shioaji.log
 src/sj_trading/Backend.py
 src/sj_trading/mainbackup.py
