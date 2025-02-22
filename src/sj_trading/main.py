@@ -4,12 +4,13 @@ from PyQt6.QtCore import QThread
 from .ui import TradingMonitor
 import sys
 from .logic.Backend import BackendWorker
-
+import os
 
 
 
 
 if __name__ == "__main__":
+    os.environ["QT_QPA_PLATFORM"] = "offscreen"
     app = QApplication(sys.argv)
 
     # 啟動 UI

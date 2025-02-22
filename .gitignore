@@ -23,3 +23,5 @@ src/sj_trading/uibackup.py
 .env
 src/sj_trading/logic/
 otherData/
+src/sj_trading/otherData/
+
