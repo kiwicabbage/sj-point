@@ -25,6 +25,7 @@ if __name__ == "__main__":
     window.place_order_signal.connect(backend_worker.firstOrderBottom)
     # QTimer 啟動於正確的執行緒中
     backend_thread.started.connect(backend_worker.timer.start)
+    backend_thread.started.connect(backend_worker.respond_timer.start)
     backend_thread.start()
     backend_worker.update_data()
 
