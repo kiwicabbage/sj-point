@@ -10,6 +10,7 @@ def selectContract(sj):
 
        BegCode = str(all_contract[0])[:3]
        contractList = all_contract[0]
+       print(all_contract)
 
        if BegCode == 'TX4' and str(all_contract[1])[:3] == 'TXO':
               BegCode = 'TXO'
@@ -40,10 +41,12 @@ def selectContract(sj):
 
        StrikePrices = (sorted([int(i.code[3:-2]) for i in contractList if i.code[-2:] == EndCodeP 
               and i.code[:3] == BegCode]))
-
+       print(f'sp = {StrikePrices}')
 
        CallContracts = ([BegCode + str(i) + EndCodeC for i in StrikePrices])
+       print(f'call contract = {CallContracts}')
        PutContracts = ([BegCode + str(i) + EndCodeP for i in StrikePrices])
+       print(f'put contract = {PutContracts}')
        # print(API.api.Contracts.Options[contracts[9]])
        return CallContracts, PutContracts
 
